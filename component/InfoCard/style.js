@@ -10,6 +10,7 @@ export const InfoCardView = styled.View`
     padding-left: 20px;
     position: relative;
     overflow: hidden;
+    /* box-shadow: 20px 0px 15px black; */
 `;
 
 export const CardBadge = styled.View`

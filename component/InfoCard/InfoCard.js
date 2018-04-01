@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   qqq:{
     color: 'red',
     width: 50,
-    fontSize: 26,
+    fontSize: 22,
     lineHeight: 40,
     textAlign: 'center'
   }
