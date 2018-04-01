@@ -12,7 +12,7 @@ export default class EnergiaSolar extends React.Component {
         <InfoCard
           title="Lisboa"
           des="Run Joaquim Carvalho Luis"
-          icon={Icons.angleDoubleUp} />
+          icon={Icons.locationArrow} />
       </EnergiaView>
     );
   }

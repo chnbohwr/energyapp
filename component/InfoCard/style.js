@@ -13,8 +13,8 @@ export const InfoCardView = styled.View`
 `;
 
 export const CardBadge = styled.View`
-    width: 4px;
-    height: 60px;
+    width: 3px;
+    height: 100%;
     background: red;
     position: absolute;
     top: 0;
