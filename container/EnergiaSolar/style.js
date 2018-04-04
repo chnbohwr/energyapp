@@ -14,5 +14,5 @@ export const Title = styled.Text`
 export const SubTitle = styled.Text`
     font-size: 12px;
     margin-bottom: 10px;
-    color: #ccc;
+    color: #777;
 `;

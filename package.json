@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "a": "node node_modules/react-native/local-cli/cli.js run-android",
     "test": "jest"
   },
   "dependencies": {
     "react": "16.3.0-alpha.3",
     "react-native": "0.54.3",
     "react-native-fontawesome": "^5.7.0",
-    "react-native-snap-slider": "^0.3.0",
     "styled-components": "^3.2.3"
   },
   "devDependencies": {
