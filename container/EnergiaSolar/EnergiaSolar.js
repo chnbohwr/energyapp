@@ -36,6 +36,12 @@ export default class EnergiaSolar extends React.Component {
           defaultValue={currentRangeValue}
           onSelect={this.rangeChange}
         />
+        <SubTitle>Tipo De Tarifa</SubTitle>
+        <RangeCard
+          items={rangeItem}
+          defaultValue={currentRangeValue}
+          onSelect={this.rangeChange}
+        />
       </EnergiaView>
     );
   }

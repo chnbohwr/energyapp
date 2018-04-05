@@ -9,6 +9,7 @@ export const RangeCardView = styled.View`
   position: relative;
   overflow: hidden;
   padding: 10px 5px 20px 5px;
+  margin-bottom: 20px;
 `;
 
 export const Title = styled.Text`
