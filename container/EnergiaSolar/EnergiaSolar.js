@@ -2,6 +2,7 @@ import React from 'react';
 import { EnergiaView, Title, SubTitle } from './style';
 import InfoCard from '../../component/InfoCard';
 import RangeCard from '../../component/RangeCard';
+import ButtonsCard from '../../component/ButtonsCard';
 import { Icons } from 'react-native-fontawesome';
 
 export default class EnergiaSolar extends React.Component {
@@ -13,11 +14,20 @@ export default class EnergiaSolar extends React.Component {
       { value: 3, label: '3' },
     ],
     currentRangeValue: 0,
+    buttons: [
+      {id: 1, label: 'Simple', isActive: true},
+      {id: 2, label: 'Medium', isActive: false},
+      {id: 3, label: 'Hard', isActive: false},
+    ]
   }
 
   rangeChange = (item) => {
     console.log(item);
     // this.setState({ currentRangeValue: item.value });
+  }
+
+  buttonsChange = (item) => {
+    console.log(item);
   }
 
   render() {
@@ -37,10 +47,9 @@ export default class EnergiaSolar extends React.Component {
           onSelect={this.rangeChange}
         />
         <SubTitle>Tipo De Tarifa</SubTitle>
-        <RangeCard
+        <ButtonsCard
           items={rangeItem}
-          defaultValue={currentRangeValue}
-          onSelect={this.rangeChange}
+          onSelect={this.buttonsChange}
         />
       </EnergiaView>
     );
