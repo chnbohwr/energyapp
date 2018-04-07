@@ -27,11 +27,12 @@ export default class EnergiaSolar extends React.Component {
   }
 
   buttonsChange = (item) => {
-    console.log(item);
+    const buttons = this.state.buttons.map(data=>({...data, isActive: data.id === item.id}));
+    this.setState({buttons});
   }
 
   render() {
-    const { rangeItem, currentRangeValue } = this.state;
+    const { rangeItem, currentRangeValue, buttons } = this.state;
     return (
       <EnergiaView>
         <Title>Energia Solar</Title>
@@ -48,7 +49,7 @@ export default class EnergiaSolar extends React.Component {
         />
         <SubTitle>Tipo De Tarifa</SubTitle>
         <ButtonsCard
-          items={rangeItem}
+          items={buttons}
           onSelect={this.buttonsChange}
         />
       </EnergiaView>
