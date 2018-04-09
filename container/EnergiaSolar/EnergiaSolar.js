@@ -1,9 +1,10 @@
 import React from 'react';
 import { EnergiaView, Title, SubTitle } from './style';
+import { Icons } from 'react-native-fontawesome';
 import InfoCard from '../../component/InfoCard';
 import RangeCard from '../../component/RangeCard';
 import ButtonsCard from '../../component/ButtonsCard';
-import { Icons } from 'react-native-fontawesome';
+import Button from '../../component/Button';
 
 export default class EnergiaSolar extends React.Component {
   state = {
@@ -52,6 +53,7 @@ export default class EnergiaSolar extends React.Component {
           items={buttons}
           onSelect={this.buttonsChange}
         />
+        <Button text="Recever Simulacao" onPress={()=>{}} />
       </EnergiaView>
     );
   }

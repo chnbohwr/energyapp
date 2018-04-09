@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TouchableWithText } from 'react-native-touchables';
 import { ButtonsCardView } from './style';
 import TabButton from './components/TabButton';
 
@@ -15,7 +14,6 @@ export default class ButtonsCard extends React.Component {
   }
   render() {
     const { items } = this.props;
-    console.log(TouchableWithText);
     return (
       <ButtonsCardView>
         {
